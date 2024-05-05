@@ -1,9 +1,14 @@
 * {
 
     box-sizing: border-box;
-    margin: 0;
+    margin: 2px;
     padding: 0;
 
+}
+
+body {
+    background-color: #0f172a;
+    color: #e2e8f0;
 }
 
 ul {
@@ -15,10 +20,12 @@ ul {
     display: grid;
     grid-template-columns: 1.2fr 8fr;
     grid-template-rows: 1fr 5fr;
+    gap: 7px;
 }
 
 .container > div {
-    border: 1px solid black;
+    border: 3px solid #1e293b;
+    border-radius: 10px;
 }
 
 .header {
@@ -30,22 +37,71 @@ ul {
 }
 
 .header > ul {
-    border: 1px solid black;
+border-radius: 15px 15px 0px 0px;
+
 }
 
 .top-header {
     display: grid;
-    grid-template-columns: 1fr 4fr  1fr 1fr 1fr;
+    grid-template-columns: .2fr 7fr 1fr 1fr 1fr;
 
     grid-column: 1 / 3;
+    background-color: #334155;
+    align-items: center;
+    column-gap: 20px;
+    justify-items: stretch;
+    
+}
 
+
+.search-svg {
+    filter: invert(95%) sepia(1%) saturate(7499%) hue-rotate(187deg) brightness(103%) contrast(88%);
+    margin-left: 10px;
+    justify-self: start;
+}
+.search-svg:hover {
+    cursor: pointer;
+}
+.bell-icon {
+    filter: invert(95%) sepia(1%) saturate(7499%) hue-rotate(187deg) brightness(103%) contrast(88%);
+    
+}
+
+.bell-icon:hover {
+    cursor: pointer;
+    
+}
+.user-profile-icon {
+    filter: invert(95%) sepia(1%) saturate(7499%) hue-rotate(187deg) brightness(103%) contrast(88%);
+}
+.user-profile-icon:hover {
+    cursor: pointer;
+}
+
+.username {
+    margin-right: 10px;
+    font-size: 1.3rem;
+}
+.username:hover {
+    cursor: pointer;
+}
+
+
+[type="text"] {
+    width: 80%;
+    height: 2rem;
+    
+    border-radius: 15px;
+    border-style: none;
+    padding-left: 19px;
+    
 }
 
 .bottom-header {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
     grid-column: 1 / 3;
-
+    align-items: center;
 }
 
 .sidebar {
