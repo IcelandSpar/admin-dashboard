@@ -16,7 +16,7 @@
 body {
     background-color: #0f172a;
     color: #e2e8f0;
-    margin: 10px;
+    margin: 15px 15px 15px 15px;
 }
 
 ul {
@@ -29,11 +29,13 @@ ul {
     grid-template-columns: 1.2fr 8fr;
     grid-template-rows: 1fr 5fr;
     gap: 7px;
+    height: 100vh;
 }
 
 .container > div {
     border: 3px solid #1e293b;
     border-radius: 10px;
+
 }
 
 .header {
@@ -45,7 +47,7 @@ ul {
 }
 
 .header > ul {
-border-radius: 15px 15px 0px 0px;
+    border-radius: 15px 15px 0px 0px;
 
 }
 
@@ -64,7 +66,7 @@ border-radius: 15px 15px 0px 0px;
 
 .search-svg {
     filter: invert(95%) sepia(1%) saturate(7499%) hue-rotate(187deg) brightness(103%) contrast(88%);
-    margin-left: 10px;
+    margin-left: 20px;
     justify-self: start;
 }
 .search-svg:hover {
@@ -273,7 +275,7 @@ button:hover {
 
 .individual-projects {
     display: grid;
-
+    
    
 }
 
@@ -297,6 +299,7 @@ button:hover {
     justify-self: start;
     align-self: start;
     line-height: 1.6;
+    color: #cbd5e1;
 }
 .project-icons-container {
     display: grid;
@@ -345,4 +348,30 @@ button:hover {
     margin-bottom: 5px;
     font-family: "Fira Sans Condensed";
     font-size: 1rem;
+    color: #cbd5e1;
+}
+
+.trending-content {
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    font-family: "Fira Sans Condensed";
+}
+
+.individual-trending {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    line-height: 1.6;
+}
+
+.names {
+    font-weight: bold;
+    font-size: 1.3rem;
+
+}
+
+.trending-description {
+    font-size: 1.2rem;
+    color: #cbd5e1;
 }
