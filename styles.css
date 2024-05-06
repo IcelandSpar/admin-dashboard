@@ -261,12 +261,36 @@ button:hover {
    
     
 }
-.projects-container div {
+.projects-container > div {
     border-left: 10px solid #94a3b8;
     border-right: 2px solid #94a3b8;
     border-bottom: 2px solid #94a3b8;
     border-top: 2px solid #94a3b8;
     border-radius: 15px;
+}
+
+.individual-projects {
+    display: grid;
+}
+
+.individual-projects > div{
+    margin: 20px 30px;
+}
+
+.project-titles {
+    font-family: "Fira Sans Condensed";
+    font-size: 1.5rem;
+}
+.project-descriptions {
+    max-width: 50ch;
+    font-family: "Fira Sans Condensed";
+    font-size: 1rem;
+}
+.project-icons-container {
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
 }
 
 .trending-container {
