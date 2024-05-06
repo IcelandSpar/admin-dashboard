@@ -168,29 +168,68 @@ button:hover {
 
 .sidebar {
     display: grid;
-    grid-template-rows: .1fr 1fr 1fr;
+    grid-template-rows: .09fr .09fr .09fr;
 
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+    background-color: #334155;
+    row-gap: 30px;
+    color: #e2e8f0;
+    font-family: "Fira Sans Condensed";
 
-    row-gap: 50px;
 }
 
 .dash-title {
     display: grid;
     grid-template-columns: 1fr 5fr;
+    align-items: start;
+    column-gap: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+
+    margin-top: 15px;
+    margin-left: 10px;
+    letter-spacing: 1.2px;
 }
+
+.company-logo, img {
+    filter: invert(95%) sepia(1%) saturate(7499%) hue-rotate(187deg) brightness(103%) contrast(88%);
+}
+.home-section, .settings-section {
+    font-size: 1.3rem;
+    margin-left: 10px;
+    align-items: center;
+}
+
 
 .home-section {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
+    row-gap: 10px;
+    
+
+}
+
+.home-section li {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+    column-gap: 5px;
 }
 
 .settings-section {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
+    row-gap: 10px;
+}
+
+.settings-section li {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+    column-gap: 5px;
 }
 
 
